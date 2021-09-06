@@ -69,7 +69,7 @@ header {
 }
 
 .column__left span {
-    color: #2e89df;
+  color: #2e89df;
 }
 
 .column__left h4 {
@@ -88,17 +88,54 @@ header {
 }
 
 .hero__img {
-    width: 400px;
-    height: auto;
+  width: 400px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
   }
+  .about__container {
+    grid-template-columns: 1fr;
+  }
 }
 
-.about__section {
-    background-color: #2b2d30;
-    color: #fff;
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 0px 10px;
+}
+
+.about__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 5rem;
+}
+
+.about__left h1 {
+    font-size: 50px;
+}
+
+.about__left h3 {
+    font-weight: 600;
+    padding-top: 10px;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+
+.about__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.about__img {
+  width: 400px;
+  height: auto;
 }
